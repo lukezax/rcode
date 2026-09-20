@@ -1,6 +1,7 @@
 # 编译输出
 dist
 node_modules
+*.tsbuildinfo
 
 # 日志
 logs

@@ -6,6 +6,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { databaseConfig } from './config/database.config';
 import { AuthModule } from './modules/auth/auth.module';
+import { TargetsModule } from './modules/targets/targets.module';
+import { CodesModule } from './modules/codes/codes.module';
+import { MeModule } from './modules/me/me.module';
+import { AdminModule } from './modules/admin/admin.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { DataInitService } from './common/services/data-init.service';
@@ -32,6 +36,10 @@ import { Target } from './modules/targets/entities/target.entity';
     
     // 业务模块
     AuthModule,
+    TargetsModule,
+    CodesModule,
+    MeModule,
+    AdminModule,
   ],
   controllers: [AppController],
   providers: [
