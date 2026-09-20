@@ -9,7 +9,7 @@ rcode/
 ├── backend/     # 后端服务（NestJS + TypeScript + SQLite）
 ├── frontend/    # 用户端 Web（React + Arco Design）
 ├── admin/       # 管理后台 Web（React + Arco Design）
-├── docs/        # 需求 / 开发 / 实施计划文档
+├── docs/        # 需求 / 开发 / 实施计划 / 使用说明书
 └── README.md
 ```
 
@@ -17,12 +17,12 @@ rcode/
 
 | 层级 | 技术 |
 |------|------|
-| 后端 | NestJS 10 + TypeScript + TypeORM |
-| 数据库 | SQLite（sql.js，零配置，文件存储） |
+| 后端 | NestJS 12 + TypeScript + TypeORM 1.x |
+| 数据库 | SQLite（sql.js，零配置，数据存本地文件） |
 | 认证 | JWT + bcrypt |
 | API 文档 | Swagger |
-| 用户端 | React 18 + Arco Design + Zustand + Axios |
-| 管理后台 | React 18 + Arco Design + Zustand + Axios |
+| 用户端 | React 19 + Vite 8 + Arco Design + Zustand + Axios |
+| 管理后台 | React 19 + Vite 8 + Arco Design + Zustand + Axios |
 
 ## 功能概览
 
@@ -36,10 +36,10 @@ rcode/
 
 ### 环境要求
 
-- Node.js 18+
+- Node.js 20+（已在 20.20.2 验证）
 - npm
 
-> 数据库使用 SQLite，无需安装任何数据库服务。
+> 数据库使用 SQLite，无需安装任何数据库服务，数据保存在 `backend/data/ai_referral_platform.db`。
 
 ### 1. 启动后端
 
