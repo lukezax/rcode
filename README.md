@@ -9,7 +9,7 @@ rcode/
 ├── backend/     # 后端服务（NestJS + TypeScript + SQLite）
 ├── frontend/    # 用户端 Web（React + Arco Design）
 ├── admin/       # 管理后台 Web（React + Arco Design）
-├── docs/        # 需求 / 开发 / 实施计划 / 使用说明书
+├── docs/        # 需求 / 开发 / 实施计划 / 使用说明书 / 部署文档
 └── README.md
 ```
 
@@ -105,6 +105,7 @@ bash backend/scripts/e2e-test.sh
 ## 文档
 
 - [使用说明书](./docs/使用说明书.md)（面向用户 / 管理员 / 运维）
+- [部署文档](./docs/部署文档.md)（Nginx + PM2 + HTTPS 单机部署）
 - [需求分析文档](./docs/需求分析文档.md)
 - [开发文档](./docs/开发文档.md)
 - [实施计划文档](./docs/实施计划文档.md)
